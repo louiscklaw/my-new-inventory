@@ -23,8 +23,6 @@ jobs:
         - sudo dpkg -i hugo_extended_0.69.2_Linux-64bit.deb
       script:
         - hugo
-    - stage: Merge
-      script:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
         - bash merge_if_success.sh | tee merge.log
     - stage: Publish
