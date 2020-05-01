@@ -1,5 +1,7 @@
 baseURL = "https://louiscklaw.github.io/my-new-inventory/"
 
+publishDir = "../gh-pages"
+
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Ace documentation"
