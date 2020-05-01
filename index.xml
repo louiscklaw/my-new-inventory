@@ -12,7 +12,16 @@
     
     
     <item>
-      <title>My First Post test</title>
+      <title>My First page 13321</title>
+      <link>http://example.org/pages/</link>
+      <pubDate>Fri, 01 May 2020 17:46:35 +0800</pubDate>
+      
+      <guid>http://example.org/pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My First Post 13321</title>
       <link>http://example.org/posts/my-first-post/</link>
       <pubDate>Fri, 01 May 2020 17:46:35 +0800</pubDate>
       
