@@ -1,0 +1,31 @@
+# https://docs.travis-ci.com/user/docker/
+# https://docs.travis-ci.com/user/environment-variables/
+# https://docs.travis-ci.com/user/job-lifecycle/
+
+# You can import up to 25 other configs in total.
+os: linux
+
+language: node_js
+node_js:
+  - 12
+cache:
+  - npm
+  - pip
+
+import:
+  - credentials.yml
+
+jobs:
+  include:
+    - stage: Merge
+      script:
+        # the below should be kept for test inside travis-playlist only
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success_test.sh
+        - bash merge_if_success_test.sh | tee merge.log
+
+        # production code
+        # - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
+        # - bash merge_if_success.sh | tee merge.log
+
+after_failure:
+  - cat merge.log
