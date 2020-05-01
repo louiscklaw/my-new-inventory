@@ -4,8 +4,10 @@ publishDir = "../gh-pages"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Ace documentation"
+
+title = "my inventory"
 theme = "ace-documentation"
+
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
 
@@ -14,7 +16,7 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 # Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
+googleAnalytics = "UA-73146416-14"
 
 [params]
 ordersectionsby = "weight" # ordersectionsby = "title"
@@ -32,11 +34,11 @@ menushortcutsnewtab = true # set true to open shortcuts links to a new tab/windo
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "More from us"
-url = "https://vantage-design.com"
+name = "about louis"
+url = "https://louiscklaw.github.io"
 weight = 1
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i>"
-url = "https://github.com/vantagedesign/ace-documentation"
+url = "https://github.com/louiscklaw/my-new-inventory"
 weight = 10

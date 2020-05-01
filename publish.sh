@@ -4,7 +4,7 @@ set -ex
 
 rm -rf ../gh-pages/*
 
-hugo
+hugo --minify --enableGitInfo --ignoreCache
 
 cd ../gh-pages
 
