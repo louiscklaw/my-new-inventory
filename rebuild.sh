@@ -2,4 +2,4 @@
 
 set -ex
 
-hugo server --disableFastRender
+hugo serve --disableFastRender
