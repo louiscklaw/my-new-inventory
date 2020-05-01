@@ -1,0 +1,50 @@
+[
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/box/box101/",
+	"title": "box101",
+	"tags": [],
+	"description": "",
+	"content": "box101 content  "
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/resistor/resistor/",
+	"title": "resistor",
+	"tags": [],
+	"description": "",
+	"content": "box101 content 0630 一体成型 贴片 功率电感 1UH 2.2 3.3 4.7 6.8 10 15 47UH\n "
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/",
+	"title": "Ace documentation",
+	"tags": [],
+	"description": "",
+	"content": "Ace is a theme for Hugo, a fast static website generator written in Go, that allows you to easily write well organized and clean documentation for your projects. It\u0026rsquo;s as easy as writing your content in Markdown, running Hugo to generate static HTML, CSS and Javascript files and deploying those to your web server. Features   Fast.  Static files generated in less than a second. And served to your visitors just as fast.      Minimalistic.  A clean look to keep your user's attention to the content that matters: your documentation.      For every project.  Hugo does not require Java, Python or Ruby and is available as a simple binary or through NPM and other package managers.      Automatic.  Folders and files are automatically added in the menu depending on your file and folder structure.      Full search.  Easily find the content you look for through the search function.      Code hightlighting.  Code highlighting. Include code samples with a copy button. If it’s HTML, you can also render the code.      Useful shortcodes.  Code, buttons, alerts, leads, collapse, panels, images, videos and more.      Built with Bootstrap.  Built with Bootstrap 4. Fully responsive out of the box. Build and style page elements using Bootstrap.      Icons.  Packed with Font Awesome. Empower your content with a shit ton of awesome icons.     "
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/box/",
+	"title": "Boxes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/resistor/",
+	"title": "Resistors",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://louiscklaw.github.io/my-new-inventory/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
