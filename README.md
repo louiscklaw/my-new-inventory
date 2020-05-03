@@ -1,6 +1,16 @@
 # README.md
 
-### spin me up
+### to build (for local development)
+```
+$ dev.sh
+```
+
+### to publish (expecting running by travis)
+```
+$ publish.sh
+```
+
+### to spin me up
 '''
 $ mkdir my-inventory
 $ git clone git@github.com:louiscklaw/my-new-inventory.git
