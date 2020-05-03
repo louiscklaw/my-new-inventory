@@ -1,23 +1,28 @@
 #!/usr/bin/env bash
 
-set -ex
+set -x
+
+GH_PAGES_DIR=../gh-pages
 
 # sync submodule
 git submodule update --init --recursive themes/ace-documentation
 
+git worktree prune
+
 # regen
-mkdir -p ../gh-pages
-git worktree add ../gh-pages gh-pages
+mkdir -p $GH_PAGES_DIR
+git worktree add $GH_PAGES_DIR gh-pages
 
 hugo --minify --enableGitInfo --ignoreCache
 
 # deploy
-cd ../gh-pages
+cd $GH_PAGES_DIR
   git add .
   git commit -m "$1"
   git push
 cd -
 
-rm -rf ../gh-pages
+git worktree remove --force gh-pages
+rm -rf $GH_PAGES_DIR
 
 echo 'done'
