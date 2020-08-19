@@ -1,1 +1,3 @@
-echo "public" >> .gitignore
+public
+
+**/*FCStd1
