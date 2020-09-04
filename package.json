@@ -1,0 +1,31 @@
+{
+  "name": "my-new-inventory",
+  "version": "1.0.0",
+  "description": "### to build (for local development) ``` $ dev.sh ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiscklaw/my-new-inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiscklaw/my-new-inventory/issues"
+  },
+  "homepage": "https://github.com/louiscklaw/my-new-inventory#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "scripts/pre-commit.sh"
+    }
+  }
+
+}
