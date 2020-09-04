@@ -12,19 +12,15 @@ cache:
   - npm
   - pip
 
-import:
-  - credentials.yml
 
 jobs:
   include:
+
     - stage: Test
       before_script:
         - wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_extended_0.69.2_Linux-64bit.deb
         - sudo dpkg -i hugo_extended_0.69.2_Linux-64bit.deb
-      script:
-        - hugo
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
-        - bash merge_if_success.sh | tee merge.log
+
     - stage: Publish
       script:
         - ./publish.sh "publish from travis build process,"
@@ -32,3 +28,8 @@ jobs:
 
 after_failure:
   - cat merge.log
+
+import:
+  - credentials.yml
+  - .travis-stages.yml
+  - .travis-merger.yml
